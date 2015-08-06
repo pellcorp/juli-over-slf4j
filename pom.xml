@@ -2,16 +2,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.slf4j</groupId>
 	<artifactId>juli-over-slf4j</artifactId>
-	<version>1.6.1</version>
+	<version>1.7.12</version>
 	<description>Forked from http://code.google.com/p/tomcat-slf4j</description>
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.5</maven.compiler.source>
 		<maven.compiler.target>1.5</maven.compiler.target>
-		
-		<!-- FIXME fix up the dirs below so they are relative -->
-		<devHome>file:///home/jason/Development</devHome>
 	</properties>
 	
 	<build>
@@ -41,15 +38,10 @@
 		</dependency>
 	</dependencies>
 	
-	<distributionManagement>
+	 <distributionManagement>
 		<repository>
 			<id>repo</id>
-			<url>${devHome}/maven2/releases</url>
+			<url>${maven.repo.dir}/releases</url>
 		</repository>
-
-		<snapshotRepository>
-			<id>snapshot-repo</id>
-			<url>${devHome}/maven2/snapshots</url>
-		</snapshotRepository>
 	</distributionManagement>
 </project>
